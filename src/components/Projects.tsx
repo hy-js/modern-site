@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import projects from "../lib/projects"
+import moment from "moment"
 
 
 async function getLatest() {
@@ -28,7 +29,7 @@ const Projects = async () => {
               <div className="bg-[#C7B0B1] h-2.5 rounded-full w-[50%]" ></div>
             </div>
           </a>
-          <h4>Latest Project - Coming Soon</h4>
+          <h4>Latest Project - Updated {moment(latest.pushed_at).fromNow()}</h4>
 
         </div>
       }
