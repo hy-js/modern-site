@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
 import PageWrapper from "@/components/PageWrapper"
 
+
+
 export default function Home() {
   return (
     <main className='overflow-hidden'>
