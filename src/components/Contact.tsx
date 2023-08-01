@@ -41,7 +41,7 @@ const Contact = (props: Props) => {
   }
 
   return (
-    <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
+    <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
       <div>
         <h2>Contact</h2>
         <h3>
@@ -50,7 +50,7 @@ const Contact = (props: Props) => {
         <h4>Enough about me, let me hear from you.</h4>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className='pr-4'>
+        <form onSubmit={handleSubmit}>
           <div className='w-full flex flex-col my-4'>
             <label className='font-bold ' htmlFor='name'>
               Name
@@ -98,7 +98,7 @@ const Contact = (props: Props) => {
           <button
             type='submit'
             disabled={loading}
-            className='px-4 py-2 w-40 bg-[#C7B0B1] disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4'>
+            className='px-4 py-2 w-40 bg-[#C7B0B1] disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4 hov'>
             Send Message
           </button>
         </form>
