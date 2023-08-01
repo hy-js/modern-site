@@ -16,7 +16,6 @@ const schema = yup.object().shape({
 })
 
 const ContactForm = () => {
-
   const {
     control,
     handleSubmit,
@@ -26,34 +25,29 @@ const ContactForm = () => {
     resolver: yupResolver(schema)
   })
 
-
-  const [isSent, setIsSent] = useState(false);
-  const [errorMessage, setErrorMessage] = useState('');
+  const [isSent, setIsSent] = useState(false)
+  const [errorMessage, setErrorMessage] = useState("")
 
   const onSubmit = async (data: FormData) => {
     try {
+      setIsSent(true)
+      await fetch("https://getform.io/f/0f8bfd77-b619-4c1c-92a1-7f5e1e5c3297", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
 
-      setIsSent(true);
-      await fetch(
-        "https://getform.io/f/0f8bfd77-b619-4c1c-92a1-7f5e1e5c3297",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(data)
-        }
-      )
-
-      reset({ name: '', email: '', message: '' });
+      reset({ name: "", email: "", message: "" })
     } catch (error) {
-      console.error('Form submission failed:', error);
-      setIsSent(false);
-      setErrorMessage('Failed to send. Please try again later.');
+      console.error("Form submission failed:", error)
+      setIsSent(false)
+      setErrorMessage("Failed to send. Please try again later.")
     } finally {
-      setIsSent(false);
+      setIsSent(false)
     }
-  };
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -88,11 +82,8 @@ const ContactForm = () => {
         />
         {errors.message && <span>{errors.message.message}</span>}
       </div>
-      <button
-        type='submit'
-        disabled={isSubmitting}
-        className='px-4 py-2 w-40 bg-[#C7B0B1] disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4 hov'>
-        {isSent ? 'Sending...' : 'Send'}
+      <button type='submit' disabled={isSubmitting} className="button">
+        {isSent ? "Sending..." : "Send"}
       </button>
     </form>
   )
