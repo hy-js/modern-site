@@ -18,8 +18,8 @@ const LatestWork = async () => {
       <h2>Latest Work</h2>
       {latest && (
         <a href={latest.html_url} target='none'>
-          <h2 className='font-medium capitalize'>
-            {latest.name}
+          <h2 className='font-medium'>
+            {latest.full_name}
           </h2>
           <div className='flex gap-2 mb-3 flex-wrap'>
             <p className='bg-[#5E6873] rounded-full flex justify-center items-center px-4 py-1'>
