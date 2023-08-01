@@ -92,7 +92,7 @@ const ContactForm = () => {
         type='submit'
         disabled={isSubmitting}
         className='px-4 py-2 w-40 bg-[#C7B0B1] disabled:bg-gray-400 disabled:text-gray-100 text-white font-medium mt-4 hov'>
-        {isSent ? 'Sent!' : 'Send'}
+        {isSent ? 'Sending...' : 'Send'}
       </button>
     </form>
   )

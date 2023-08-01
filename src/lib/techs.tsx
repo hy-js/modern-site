@@ -16,6 +16,8 @@ const techs = [
   "Express",
   "MongoDB",
   "PostgreSQL",
+  "Vercel",
+  "Git & Github"
  ]
 
  export default techs

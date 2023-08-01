@@ -29,14 +29,17 @@ const About = (props: Props) => {
           <div>
             <h5>
               I am a self-taught web developer, bootcamp instructor and UI/UX
-              designer based in Melbourne, Australia.
+              designer based in Melbourne, Australia. I specialise in crafting
+              single page applications with intuitive user flows. My passion is
+              exploring language in everyday and innovative web
+              applications that keep the web fun.
             </h5>
             <h5>
-              I specialize in crafting single page applications with intuitive
-              and beautiful designs. I am passionate about making creative and
-              fun web experiences.
+              Need someone to build your website from idea to deployment? Feel
+              free to get in touch!
             </h5>
           </div>
+          <h4>Skills</h4>
           <div className='flex gap-2 mb-3 flex-wrap'>
             {techs.length > 0
               ? techs.map((tech: any, key: number) => (
