@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar"
 import Projects from "@/components/Projects"
 import PageWrapper from "@/components/PageWrapper"
 import LatestWork from "@/components/LatestWork"
+import Footer from "@/components/Footer"
 
 
 
@@ -27,6 +28,9 @@ export default function Home() {
         </section>
         <section className='bg-[#5E6873]'>
           <Contact />
+        </section>
+        <section className='bg-[#5E6873]'>
+          <Footer />
         </section>
       </PageWrapper>
     </main>

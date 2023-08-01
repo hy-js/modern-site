@@ -10,6 +10,7 @@ const About = (props: Props) => {
     <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
       <div>
         <Image
+          priority={true}
           src='/profile2.jpg'
           alt='me'
           objectFit='contain'

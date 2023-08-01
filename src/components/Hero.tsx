@@ -9,12 +9,11 @@ const Hero = (props: Props) => {
       <div className='hero'>
         <div
           className='hero__image-container
-        data-scroll-section
-        data-scroll
-        data-scroll-speed="6"
+
         '>
           <div className='hero__image'>
             <Image
+              priority={true}
               src='/r-white.svg'
               alt='hero'
               fill
@@ -23,6 +22,7 @@ const Hero = (props: Props) => {
           </div>
           <div className='hero__image'>
             <Image
+              priority={true}
               src='/a-white.svg'
               alt='hero'
               fill
@@ -31,6 +31,7 @@ const Hero = (props: Props) => {
           </div>
           <div className='hero__image'>
             <Image
+              priority={true}
               src='/d-white.svg'
               alt='hero'
               fill

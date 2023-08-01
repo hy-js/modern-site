@@ -18,13 +18,16 @@ const Contact = (props: Props) => {
       message: String(event.target.message.value)
     }
 
-    const response = await fetch("https://getform.io/f/0f8bfd77-b619-4c1c-92a1-7f5e1e5c3297", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    })
+    const response = await fetch(
+      "https://getform.io/f/0f8bfd77-b619-4c1c-92a1-7f5e1e5c3297",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      }
+    )
 
     if (response.ok) {
       console.log("Message sent successfully")
@@ -60,7 +63,7 @@ const Contact = (props: Props) => {
               minLength={3}
               maxLength={150}
               required
-              placeholder="Introduce yourself"
+              placeholder='Introduce yourself'
               className=' p-4 bg-gray-50 border border-gray-100 text-black'
               autoComplete='off'
               id='name'
@@ -105,6 +108,7 @@ const Contact = (props: Props) => {
       </div>
       <div>
         <Image
+          priority={true}
           src='/profile.jpg'
           alt='me'
           objectFit='contain'
