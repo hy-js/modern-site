@@ -8,16 +8,16 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
+    <div className='grid grid-cols-1 gap-8 md:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
       <div>
         <Image
           priority={true}
           src='/profile2.jpg'
           alt='me'
-          objectFit='contain'
+          objectFit='coontain'
           className='rounded'
-          width={3024}
-          height={4032}
+          width={1512}
+          height={2016}
         />
       </div>
       <div>

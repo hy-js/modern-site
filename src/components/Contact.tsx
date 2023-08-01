@@ -9,7 +9,7 @@ type Props = {}
 const Contact = (props: Props) => {
 
   return (
-    <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
+    <div className='grid grid-cols-1 gap-8 md:grid-cols-2 p-8 max-w-[1440px] mx-auto'>
       <div>
         <h2>Contact</h2>
         <h3>
@@ -25,8 +25,8 @@ const Contact = (props: Props) => {
           alt='me'
           objectFit='contain'
           className='rounded'
-          width={3024}
-          height={4032}
+          width={1512}
+          height={2016}
         />
       </div>
     </div>
