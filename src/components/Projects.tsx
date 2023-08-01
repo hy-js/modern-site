@@ -10,7 +10,7 @@ const Projects = async () => {
         ? projects.map((project: any, key: number) => (
             <a href={project.link} target='none' key={key}>
               <h2 className='font-medium'>{project.name}</h2>
-              <h5 className='font-medium mt-0'>{project.desc}</h5>
+              <h5 className=' mt-0'>{project.desc}</h5>
               <div className='flex gap-2 mb-3 flex-wrap'>
                 <p className='bg-[#5E6873] rounded-full flex justify-center items-center px-4 py-1'>
                   {project.year}
