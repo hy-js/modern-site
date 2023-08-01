@@ -2,6 +2,7 @@ import React from "react"
 import Image from "next/image"
 import techs from "../lib/techs"
 import { Socials } from "./Socials"
+import ScrollButton from "./ScrollButton"
 
 type Props = {}
 
@@ -31,15 +32,16 @@ const About = (props: Props) => {
               I am a self-taught web developer, bootcamp instructor and UI/UX
               designer based in Melbourne, Australia. I specialise in crafting
               single page applications with intuitive user flows. My passion is
-              exploring language in everyday and innovative web
-              applications that keep the web fun.
+              exploring language in everyday and innovative web applications
+              that keep the web fun.
             </h5>
             <h5>
               Need someone to build your website from idea to deployment? Feel
               free to get in touch!
             </h5>
+            <ScrollButton targetSectionId='section5' />
           </div>
-          <h4>Skills</h4>
+          <h3>Skills</h3>
           <div className='flex gap-2 mb-3 flex-wrap'>
             {techs.length > 0
               ? techs.map((tech: any, key: number) => (
