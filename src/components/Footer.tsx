@@ -15,7 +15,7 @@ const Hero = (props: Props) => {
           width={378}
           height={128}
         />
-        <p className='m-0'>Made with Next.JS and ♥ in Melbourne, Australia.</p>
+        <p className='m-0 text-center'>Made with Next.JS and ♥ in Melbourne.</p>
         <p>© Rhys Dawson, {moment().format("YYYY")}</p>
       </div>
     </>
